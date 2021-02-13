@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {Route, Switch} from "react-router-dom"
 
-function App() {
+import Nav from "./Nav";
+import BPMNViewer from "./BPMNViewer";
+import BPMNModeler from "./BPMNModeler";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav />
+      <div class="container">
+        <Switch>
+          <Route exact path="/" component={BPMNViewer} />
+          <Route exact path="/viewer/" component={BPMNViewer} />
+          <Route exact path="/editor/" component={BPMNModeler} />
+        </Switch>
+      </div>
     </div>
   );
 }

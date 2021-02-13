@@ -1,0 +1,7 @@
+.bpmn-container{
+    height: 500px
+}
+.react-bpmn-diagram-container {
+    height: 100%;
+    padding-top: 1rem;
+}
