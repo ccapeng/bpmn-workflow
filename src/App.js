@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       <Nav />
-      <div class="container">
+      <div className="container">
         <Switch>
           <Route exact path="/">
             <Redirect to="/viewer/" />

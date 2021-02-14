@@ -4,20 +4,20 @@ import "./nav.css";
 
 const Nav = () => {
   return (
-    <div class="container d-flex mt-3 align-items-center">
-      <h1 class="h4 mb-0 title">
+    <div className="container d-flex mt-3 align-items-center">
+      <h1 className="h4 mb-0 title">
         Workflow
       </h1>
-      <ul class="nav ml-3">
-        <li class="nav-item">
-          <div class="nav-link">
+      <ul className="nav ml-3">
+        <li className="nav-item">
+          <div className="nav-link">
             <NavLink to="/viewer/" activeClassName="active">
               Viewer
             </NavLink>
           </div>
         </li>
-        <li class="nav-item">
-          <div class="nav-link">
+        <li className="nav-item">
+          <div className="nav-link">
             <NavLink to="/editor/" activeClassName="active">
               Editor
             </NavLink>

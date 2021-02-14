@@ -17,9 +17,9 @@ const BPMNViewer = () => {
   }
 
   return (
-    <div class="bpmn-container">
+    <div className="bpmn-container">
       <ReactBpmn
-        url="/diagram.bpmn"
+        url="/diagram2.bpmn"
         onShown={ onShown }
         onLoading={ onLoading }
         onError={ onError }
