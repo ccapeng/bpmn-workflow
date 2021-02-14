@@ -1,5 +1,5 @@
 import React from "react";
-import {Route, Switch} from "react-router-dom"
+import {Redirect, Route, Switch} from "react-router-dom"
 
 import Nav from "./Nav";
 import BPMNViewer from "./BPMNViewer";
@@ -11,7 +11,9 @@ const App = () => {
       <Nav />
       <div class="container">
         <Switch>
-          <Route exact path="/" component={BPMNViewer} />
+          <Route exact path="/">
+            <Redirect to="/viewer/" />
+          </Route>
           <Route exact path="/viewer/" component={BPMNViewer} />
           <Route exact path="/editor/" component={BPMNModeler} />
         </Switch>
